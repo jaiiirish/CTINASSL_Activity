@@ -1,0 +1,92 @@
+.topnav {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(202, 110, 125);
+  color: white;
+}
+
+.header{
+  position: relative;
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+}
+
+.header .header-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Garamond', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: clamp(1.8rem, 5vw, 4rem);
+  color: whitesmoke;
+  width: 90%;
+  z-index: 1;
+}
+
+.header .header-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-header{
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: rgb(80, 80, 80);
+  margin: 20px 10px;
+}
+
+.card{
+  border: 1px solid hsl(0, 0%, 69%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsl(0, 0%, 56%);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
+  background-color: rgb(252, 228, 232);
+}
+
+.card .card-image {
+    width: 60%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    margin: 10px;
+    object-fit: cover;
+}
+
+.card .card-title{
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  color: hsl(0, 0%, 21%);
+}
+
+.card .card-text{
+  font-family: monospace, sans-serif;
+  color: rgb(104, 104, 104);
+}
